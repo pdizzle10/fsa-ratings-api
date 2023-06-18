@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 import requests
 import os
 
+os.mkdir("graphs")
+os.chdir("graphs")
+
 #get data from API and create DataFrame
 url = "https://ratings.food.gov.uk/search/%5E/leeds/1/10000/json"
 r = requests.get(url)
